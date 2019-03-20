@@ -1,0 +1,21 @@
+activiti:
+  process:
+    database-schema-update: true
+    database-schema: mysql
+    async-executor-activate: false
+    process-definition-location-prefix: classpath:/processes/*.bpmn
+    history-level: audit
+    db-identity-used: false
+    db-history-used: true
+    activityFontName: 宋体
+    labelFontName: 宋体
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:10.10.1.28}:3307/shengye_process?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+spring:
+  profiles:
+    active: dev
+  application:
+    name: test-project

@@ -1,0 +1,11 @@
+ceph:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.2.176:3306/shengye_ceph?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: mysqlpwd
+
+ceph:
+  endpoint: 10.10.1.11:80
+  accessKey: JH5EU5GAVOMHPHXX81B1
+  secretKey: RrBevoZ1oce6GrRjUgsVaD6YyFi9pZhvfO6UNqFr
